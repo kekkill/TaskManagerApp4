@@ -1,0 +1,30 @@
+﻿<Controls:MetroWindow x:Class="App4.InputDialog"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                      xmlns:controls="clr-namespace:App4"
+                      Title="InputDialog"
+                      WindowStartupLocation="CenterScreen" Width="410" Height="198">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="TitleText" 
+                   FontSize="16" 
+                   FontWeight="Bold"
+                   Margin="0,0,0,10"/>
+
+        <TextBox x:Name="InputTextBox" 
+                 Grid.Row="1"
+                 Padding="10"
+                 FontSize="14"/>
+
+        <controls:DialogButtonPanel Grid.Row="2" 
+            OkClicked="OkButton_Click"
+            CancelClicked="CancelButton_Click"/>
+    </Grid>
+</Controls:MetroWindow>
