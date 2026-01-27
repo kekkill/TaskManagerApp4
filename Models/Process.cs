@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace App4.Models
+﻿namespace TaskManagerApp.Models
 {
     public class Process
     {

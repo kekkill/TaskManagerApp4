@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace App4
+namespace TaskManagerApp
 {
     public partial class App : Application
     {

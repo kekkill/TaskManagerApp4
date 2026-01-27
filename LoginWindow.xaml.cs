@@ -1,9 +1,10 @@
-﻿using App4.Models;
-using App4.Services;
+﻿using TaskManagerApp.Resources;
 using MahApps.Metro.Controls;
 using System.Windows;
+using TaskManagerApp.Models;
+using TaskManagerApp.Services;
 
-namespace App4
+namespace TaskManagerApp
 {
     public partial class LoginWindow : MetroWindow
     {
@@ -23,20 +24,21 @@ namespace App4
 
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
-                MessageBox.Show("Пожалуйста, заполните все поля", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show(Strings.EmptyField,Strings.Warning, MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
             var user = _authService.Authenticate(username, password);
             if (user != null)
             {
+                CurrentUser.Instance = user;
                 AuthenticatedUser = user;
                 DialogResult = true;
                 Close();
             }
             else
             {
-                MessageBox.Show("Неверное имя пользователя или пароль", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(Strings.UncorrectNamePasswordMessage, Strings.ErrorMessage, MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

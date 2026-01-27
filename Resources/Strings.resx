@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AssignmentMessage" xml:space="preserve">
+    <value>Not assigned</value>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ChooseWorker" xml:space="preserve">
+    <value>Choose worker</value>
+  </data>
+  <data name="EmptyField" xml:space="preserve">
+    <value>The field can't be empty</value>
+  </data>
+  <data name="ErrorMessage" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="LanguageSelection" xml:space="preserve">
+    <value>Select your Language</value>
+  </data>
+  <data name="LanguageSelectionDescription" xml:space="preserve">
+    <value>Select language</value>
+  </data>
+  <data name="LoginWindow_Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="LoginWindow_Password" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="MainWindow_AddProcessLabel" xml:space="preserve">
+    <value>Enter process name:</value>
+  </data>
+  <data name="MainWindow_AddProcessTitle" xml:space="preserve">
+    <value>Add process</value>
+  </data>
+  <data name="MainWindow_AddTaskLabel" xml:space="preserve">
+    <value>Enter task name:</value>
+  </data>
+  <data name="MainWindow_AddTaskTitle" xml:space="preserve">
+    <value>Add task</value>
+  </data>
+  <data name="MainWindow_AdminOnlyAddProcesses" xml:space="preserve">
+    <value>Only administrator can add processes</value>
+  </data>
+  <data name="MainWindow_AdminOnlyEditProcesses" xml:space="preserve">
+    <value>Only administrator can edit processes</value>
+  </data>
+  <data name="MainWindow_ConfirmationTitle" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="MainWindow_DataUpdated" xml:space="preserve">
+    <value>Data updated successfully</value>
+  </data>
+  <data name="MainWindow_DeleteProcessConfirmation" xml:space="preserve">
+    <value>Delete process '{0}' and all its tasks?</value>
+  </data>
+  <data name="MainWindow_DeleteTaskConfirmation" xml:space="preserve">
+    <value>Delete task '{0}'?</value>
+  </data>
+  <data name="MainWindow_EditProcessLabel" xml:space="preserve">
+    <value>Enter new process name:</value>
+  </data>
+  <data name="MainWindow_EditProcessTitle" xml:space="preserve">
+    <value>Edit process</value>
+  </data>
+  <data name="MainWindow_EditTaskLabel" xml:space="preserve">
+    <value>Enter new task name:</value>
+  </data>
+  <data name="MainWindow_EditTaskTitle" xml:space="preserve">
+    <value> Edit process</value>
+  </data>
+  <data name="MainWindow_ErrorTitle" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="MainWindow_ProcessAddedSuccess" xml:space="preserve">
+    <value>Process '{0}' added successfully!</value>
+  </data>
+  <data name="MainWindow_ProcessDeletedSuccess" xml:space="preserve">
+    <value>Process and all its tasks deleted</value>
+  </data>
+  <data name="MainWindow_ProcessNameCannotBeEmpty" xml:space="preserve">
+    <value>Process name cannot be empty</value>
+  </data>
+  <data name="MainWindow_ProcessUpdatedSuccess" xml:space="preserve">
+    <value>Process updated successfully</value>
+  </data>
+  <data name="MainWindow_SelectProcessFirst" xml:space="preserve">
+    <value>First select a process to add a task</value>
+  </data>
+  <data name="MainWindow_SuccessTitle" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="MainWindow_TaskAddedSuccess" xml:space="preserve">
+    <value>Task '{0}' added successfully!</value>
+  </data>
+  <data name="MainWindow_TaskDeletedSuccess" xml:space="preserve">
+    <value>Task deleted</value>
+  </data>
+  <data name="MainWindow_TaskNameCannotBeEmpty" xml:space="preserve">
+    <value>Task name cannot be empty</value>
+  </data>
+  <data name="MainWindow_TaskUpdatedSuccess" xml:space="preserve">
+    <value>Task updated successfully</value>
+  </data>
+  <data name="MainWindow_Title" xml:space="preserve">
+    <value>Task manager</value>
+  </data>
+  <data name="MainWindow_WarningTitle" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="MainWindow_WorkerCanDeleteOnlyOwnTasks" xml:space="preserve">
+    <value>You can delete only your own tasks</value>
+  </data>
+  <data name="MainWindow_WorkerCanEditOnlyOwnTasks" xml:space="preserve">
+    <value>You can edit only your own tasks</value>
+  </data>
+  <data name="MainWindow_YourTasksCount" xml:space="preserve">
+    <value>(your tasks)</value>
+  </data>
+  <data name="LoginWindow_TaskManager" xml:space="preserve">
+    <value>Task manager</value>
+  </data>
+  <data name="UncorrectNamePasswordMessage" xml:space="preserve">
+    <value>Uncorrect name or password </value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="LoginWindow_Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginWindow_Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="LoginWindow_Authorization" xml:space="preserve">
+    <value>Authorization</value>
+  </data>
+  <data name="MainWindow_SystemTitle" xml:space="preserve">
+    <value>Task Management System</value>
+  </data>
+  <data name="MainWindow_TabProcesses" xml:space="preserve">
+    <value>Processes</value>
+  </data>
+  <data name="MainWindow_RefreshButton" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="MainWindow_AddProcessButton" xml:space="preserve">
+    <value>Add Process</value>
+  </data>
+  <data name="MainWindow_EditButton" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="MainWindow_IDColumn" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="MainWindow_ProcessNameColumn" xml:space="preserve">
+    <value>Process Name</value>
+  </data>
+  <data name="MainWindow_TaskCountColumn" xml:space="preserve">
+    <value>Task Count</value>
+  </data>
+  <data name="MainWindow_CreatedColumn" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="MainWindow_ActionsColumn" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="MainWindow_DeleteButton" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="MainWindow_TabTasks" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="MainWindow_AddTaskButton" xml:space="preserve">
+    <value>Add Task</value>
+  </data>
+  <data name="MainWindow_TaskNameColumn" xml:space="preserve">
+    <value>Task Name</value>
+  </data>
+  <data name="MainWindow_StatusColumn" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="MainWindow_AssignedToColumn" xml:space="preserve">
+    <value>Assigned To</value>
+  </data>
+  <data name="MainWindow_TotalTasksLabel" xml:space="preserve">
+    <value>Total Tasks:</value>
+  </data>
+  <data name="RegisterWindow_Title" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="RegisterWindow_Header" xml:space="preserve">
+    <value>New User Registration</value>
+  </data>
+  <data name="RegisterWindow_UsernameLabel" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="RegisterWindow_EmailLabel" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="RegisterWindow_PasswordLabel" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="RegisterWindow_RegisterButton" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="InputDialog_Title" xml:space="preserve">
+    <value>Input Dialog</value>
+  </data>
+  <data name="InputDialog_AssignToWorker" xml:space="preserve">
+    <value>Assign to worker:</value>
+  </data>
+  <data name="DialogButtonPanel_OkButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="DialogButtonPanel_CancelButton" xml:space="preserve">
+    <value>CANCEL</value>
+  </data>
+  <data name="ChooseLanguage_Title" xml:space="preserve">
+    <value>Language Selection</value>
+  </data>
+  <data name="ChooseLanguage_Description" xml:space="preserve">
+    <value>Please select your preferred language for the interface:</value>
+  </data>
+  <data name="ChooseLanguage_Russian" xml:space="preserve">
+    <value>Russian</value>
+  </data>
+  <data name="ChooseLanguage_English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="ChooseLanguage_German" xml:space="preserve">
+    <value>German</value>
+  </data>
+  <data name="ChooseLanguage_NextButton" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="ChooseLanguage_Note" xml:space="preserve">
+    <value>You can change the language later in application settings.</value>
+  </data>
+</root>

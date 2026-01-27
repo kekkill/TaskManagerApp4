@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace App4.Models
+﻿namespace TaskManagerApp.Models
 {
     public class TaskItem
     {
@@ -8,6 +6,7 @@ namespace App4.Models
         public int ProcessId { get; set; }
         public int Priority { get; set; } = 2;
         public int? AssignedToUserId { get; set; }
+        public User? AssignedToUser { get; set; } = null!;
         public Process Process { get; set; } = null!;
         public string TaskName { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;

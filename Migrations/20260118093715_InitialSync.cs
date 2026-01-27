@@ -1,9 +1,8 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace App4.Migrations
+namespace TaskManagerApp.Migrations
 {
     /// <inheritdoc />
     public partial class InitialSync : Migration

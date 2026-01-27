@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace App4
+namespace TaskManagerApp
 {
     public partial class DialogButtonPanel : UserControl
     {

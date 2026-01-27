@@ -1,10 +1,9 @@
-﻿using App4.Data;
-using App4.Models;
-using Microsoft.EntityFrameworkCore;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
+using TaskManagerApp.Data;
+using TaskManagerApp.Models;
 
-namespace App4.Services
+namespace TaskManagerApp.Services
 {
     public class AuthService
     {

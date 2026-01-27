@@ -1,13 +1,15 @@
-﻿<Controls:MetroWindow x:Class="App4.InputDialog"
+﻿<Controls:MetroWindow x:Class="TaskManagerApp.InputDialog"
                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                       xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-                      xmlns:controls="clr-namespace:App4"
-                      Title="InputDialog"
-                      WindowStartupLocation="CenterScreen" Width="410" Height="198">
+                      xmlns:controls="clr-namespace:TaskManagerApp"
+                      xmlns:res="clr-namespace:TaskManagerApp.Resources"
+                      Title="{x:Static res:Strings.InputDialog_Title}"
+                      WindowStartupLocation="CenterScreen" Width="410" Height="280">
 
     <Grid Margin="20">
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -21,9 +23,20 @@
         <TextBox x:Name="InputTextBox" 
                  Grid.Row="1"
                  Padding="10"
-                 FontSize="14"/>
+                 FontSize="14"
+                 Margin="0,0,0,15"/>
 
-        <controls:DialogButtonPanel Grid.Row="2" 
+        <StackPanel x:Name="WorkerPanel" Grid.Row="2" Visibility="Collapsed">
+            <TextBlock Text="{x:Static res:Strings.InputDialog_AssignToWorker}" FontWeight="Bold" Margin="0,0,0,5"/>
+            <ComboBox x:Name="WorkersComboBox" 
+                      DisplayMemberPath="Username" 
+                      SelectedValuePath="Id"
+                      Height="30"
+                      FontSize="14"
+                      Padding="5"/>
+        </StackPanel>
+
+        <controls:DialogButtonPanel Grid.Row="3" 
             OkClicked="OkButton_Click"
             CancelClicked="CancelButton_Click"/>
     </Grid>

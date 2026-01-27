@@ -1,8 +1,8 @@
-﻿using App4.Services;
-using MahApps.Metro.Controls;
+﻿using MahApps.Metro.Controls;
 using System.Windows;
+using TaskManagerApp.Services;
 
-namespace App4
+namespace TaskManagerApp
 {
     public partial class RegisterWindow : MetroWindow
     {

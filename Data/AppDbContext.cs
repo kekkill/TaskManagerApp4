@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using App4.Models;
+using TaskManagerApp.Models;
 
-namespace App4.Data
+namespace TaskManagerApp.Data
 {
     public class AppDbContext : DbContext
     {
@@ -38,6 +38,11 @@ namespace App4.Data
             modelBuilder.Entity<User>()
                 .HasIndex(u => u.Email)
                 .IsUnique();
+            modelBuilder.Entity<TaskItem>()
+                .HasOne(t => t.AssignedToUser)
+                .WithMany()
+                .HasForeignKey(t => t.AssignedToUserId)
+                .OnDelete(DeleteBehavior.SetNull);
         }
     }
 }
