@@ -354,4 +354,22 @@
   <data name="ChooseLanguage_Note" xml:space="preserve">
     <value>You can change the language later in application settings.</value>
   </data>
+  <data name="RegisterWindow_Success" xml:space="preserve">
+    <value>Succes</value>
+  </data>
+  <data name="RegisterWindow_FieldError" xml:space="preserve">
+    <value>Please, fill all fields</value>
+  </data>
+  <data name="RegisterWindow_SymbolError" xml:space="preserve">
+    <value>Password must be consist of 6 and more symbols</value>
+  </data>
+  <data name="RegisterWindow_SuccesAuth" xml:space="preserve">
+    <value>Registration completed successfully! You can now log in.</value>
+  </data>
+  <data name="RegisterWindow_UserExists" xml:space="preserve">
+    <value>User with this name or email already exists</value>
+  </data>
+  <data name="RegisterWindow_RegisterFail" xml:space="preserve">
+    <value>Registration Error:</value>
+  </data>
 </root>

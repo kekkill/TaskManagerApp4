@@ -354,4 +354,22 @@
   <data name="ChooseLanguage_Note" xml:space="preserve">
     <value>Язык можно изменить позже в настройках приложения.</value>
   </data>
+  <data name="RegisterWindow_Success" xml:space="preserve">
+    <value>Успех</value>
+  </data>
+  <data name="RegisterWindow_FieldError" xml:space="preserve">
+    <value>Пожалуйста, заполните все поля</value>
+  </data>
+  <data name="RegisterWindow_SymbolError" xml:space="preserve">
+    <value>Пароль должен содержать не менее 6 символов</value>
+  </data>
+  <data name="RegisterWindow_SuccesAuth" xml:space="preserve">
+    <value>Регистрация успешно завершена! Теперь вы можете войти в систему.</value>
+  </data>
+  <data name="RegisterWindow_UserExists" xml:space="preserve">
+    <value>Пользователь с таким именем или email уже существует</value>
+  </data>
+  <data name="RegisterWindow_RegisterFail" xml:space="preserve">
+    <value>Ошибка регистрации:</value>
+  </data>
 </root>

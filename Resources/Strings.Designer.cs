@@ -709,6 +709,15 @@ namespace TaskManagerApp.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Please, fill all fields.
+        /// </summary>
+        public static string RegisterWindow_FieldError {
+            get {
+                return ResourceManager.GetString("RegisterWindow_FieldError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на New User Registration.
         /// </summary>
         public static string RegisterWindow_Header {
@@ -736,11 +745,56 @@ namespace TaskManagerApp.Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Registration Error:.
+        /// </summary>
+        public static string RegisterWindow_RegisterFail {
+            get {
+                return ResourceManager.GetString("RegisterWindow_RegisterFail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Registration completed successfully! You can now log in..
+        /// </summary>
+        public static string RegisterWindow_SuccesAuth {
+            get {
+                return ResourceManager.GetString("RegisterWindow_SuccesAuth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Succes.
+        /// </summary>
+        public static string RegisterWindow_Success {
+            get {
+                return ResourceManager.GetString("RegisterWindow_Success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Password must be consist of 6 and more symbols.
+        /// </summary>
+        public static string RegisterWindow_SymbolError {
+            get {
+                return ResourceManager.GetString("RegisterWindow_SymbolError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Registration.
         /// </summary>
         public static string RegisterWindow_Title {
             get {
                 return ResourceManager.GetString("RegisterWindow_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на User with this name or email already exists.
+        /// </summary>
+        public static string RegisterWindow_UserExists {
+            get {
+                return ResourceManager.GetString("RegisterWindow_UserExists", resourceCulture);
             }
         }
         
