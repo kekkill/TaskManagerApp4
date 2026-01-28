@@ -1,6 +1,7 @@
 ﻿using MahApps.Metro.Controls;
 using System.Windows;
 using TaskManagerApp.Services;
+using TaskManagerApp.Resources;
 
 namespace TaskManagerApp
 {
@@ -24,13 +25,13 @@ namespace TaskManagerApp
                 string.IsNullOrWhiteSpace(email) ||
                 string.IsNullOrWhiteSpace(password))
             {
-                MessageBox.Show("Пожалуйста, заполните все поля", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show(Strings.RegisterWindow_FieldError, Strings.ErrorMessage, MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
             if (password.Length < 6)
             {
-                MessageBox.Show("Пароль должен содержать не менее 6 символов", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show(Strings.RegisterWindow_SymbolError, Strings.ErrorMessage, MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
@@ -38,17 +39,17 @@ namespace TaskManagerApp
             {
                 if (_authService.RegisterUser(username, password, email))
                 {
-                    MessageBox.Show("Регистрация успешно завершена! Теперь вы можете войти в систему.", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show(Strings.RegisterWindow_SuccesAuth, Strings.RegisterWindow_Success, MessageBoxButton.OK, MessageBoxImage.Information);
                     Close();
                 }
                 else
                 {
-                    MessageBox.Show("Пользователь с таким именем или email уже существует", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show(Strings.RegisterWindow_UserExists, Strings.ErrorMessage, MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             catch (System.Exception ex)
             {
-                MessageBox.Show($"Ошибка регистрации: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(Strings.RegisterWindow_RegisterFail + $"{ex.Message}", Strings.ErrorMessage, MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }
